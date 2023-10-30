@@ -1,0 +1,50 @@
+body {
+  background-image: url('/7225605.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: black;
+  color: black;
+  margin: 0;
+}
+
+#conteudo {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  text-align: center;
+  font-family: cursive;
+}
+
+#conteudo::before {
+  content: "";
+  position: absolute;
+  top: 10px; /* Ajuste a distância vertical desejada */
+  left: 3%; /* Ajuste a distância horizontal desejada */
+  right: 3%; /* Ajuste a distância horizontal desejada */
+  bottom: 0; /* Ajuste a distância vertical desejada */
+  background-color: rgba(80, 80, 80, 0.336); /* Cor branca com 20% de opacidade */
+  border-radius: 10px; /* Ajuste o raio do canto para criar bordas arredondadas */
+  border: 2px solid #ffffff73;
+  backdrop-filter: blur(10px); /* Ajuste o valor para alterar a quantidade de blur */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 80px;
+  border-radius: 50px;
+}
+
+.btn2 {
+  background: rgb(180, 0, 0);
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 80px;
+  border-radius: 50px;
+}
